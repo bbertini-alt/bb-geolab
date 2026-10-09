@@ -4,18 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site</title>
-    <link rel="stylesheet" href="style.css">
 
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
+    <meta name="description"
+        content="Portfólio de Bruna Bertini: geoprocessamento, sensoriamento remoto, GIS e análise de dados ambientais.">
+
+    <title>Bruna Bertini | Geotecnologias e Análise de Dados</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- Menu fixo -->
+
+    <!-- MENU -->
     <nav class="navbar">
         <div class="container nav-container">
             <ul class="nav-links">
@@ -27,84 +27,323 @@
         </div>
     </nav>
 
-    <!-- Banner -->
-    <section class="hero">
-        <img src="banner.png" alt="Banner do site">
-    </section>
+    <!-- BANNER -->
+    <header id="inicio" class="hero">
+        <img src="banner.png" alt="Banner do portfólio de Bruna Bertini">
 
-    <!-- SOBRE -->
-    <section id="sobre" class="section">
-        <div class="container sobre-container">
-            <img src="sobre-1.png" alt="Página sobre 1" class="sobre-img">
-            <img src="sobre-2.png" alt="Página sobre 2" class="sobre-img">
-        </div>
-    </section>
+        <a href="#sobre" class="scroll-down" aria-label="Rolar para a próxima seção">
+            <span></span>
+        </a>
+    </header>
 
-    <section id="projetos" class="section">
-    <div class="container">
+    <!-- SOBRE / APRESENTAÇÃO -->
+    <section id="sobre" class="section about-section">
+        <div class="container about-container">
 
-        <div class="carousel">
-            <button class="prev">&#10094;</button>
+            <div class="about-content">
+                <span class="section-eyebrow">
+                    GEOTECNOLOGIAS · DADOS AMBIENTAIS
+                </span>
 
-            <div class="carousel-inner">
-                <img src="projeto-1.png" alt="Projeto 1">
-                <img src="projeto-2.png" alt="Projeto 2">
+                <h1>Da floresta aos dados.</h1>
+
+                <p class="about-description">
+                    Estudante de Engenharia Florestal na UFSCar,
+                    com interesse em geoprocessamento, sensoriamento
+                    remoto e análise de dados ambientais.
+                </p>
+
+                <div class="about-actions">
+                    <a href="#projetos" class="about-button">
+                        Conheça meus projetos ↗
+                    </a>
+
+                    <a href="#contato" class="about-link">
+                        Entre em contato
+                    </a>
+                </div>
+
+                <div class="about-caption">
+                    <span class="about-line"></span>
+                    <span>Engenharia Florestal · UFSCar</span>
+                </div>
             </div>
 
-            <button class="next">&#10095;</button>
+            <div class="about-images">
+                <figure class="about-image about-image--main">
+                    <img
+                        src="sobre-1.png"
+                        alt="Paisagem florestal representando a conexão entre natureza e dados ambientais">
+
+                    <figcaption class="about-image-label">
+                        <span>SENSORIAMENTO REMOTO</span>
+                        <p>Dados espaciais · Indicadores ambientais</p>
+                    </figcaption>
+                </figure>
+
+                <figure class="about-image about-image--secondary">
+                    <img
+                        src="sobre-2.png"
+                        alt="Imagem complementar sobre análise de dados ambientais">
+
+                    <figcaption class="about-image-label">
+                        <span>ANÁLISE DE DADOS</span>
+                        <p>Métricas · Visualização · Interpretação</p>
+                    </figcaption>
+                </figure>
+            </div>
+
         </div>
+    </section>
 
-    </div>
-</section>
+    <!-- GALERIA DE PROJETOS -->
+    <section id="projetos" class="section projects-section">
+        <div class="container">
 
-</section>
+            <div class="section-heading">
+                <span class="section-eyebrow">PORTFÓLIO TÉCNICO</span>
 
-    <!-- Recursos / Ensino -->
-<section id="recursos" class="section alt">
-    <div class="container cards-container">
+                <h2>Projetos geoespaciais</h2>
 
-        <div class="card">
-            <h3>📘 Aulas</h3>
-            <p>Slides, resumos e materiais utilizados em disciplinas e workshops.</p>
+                <p>
+                    Aplicações e estudos que integram geoprocessamento,
+                    sensoriamento remoto e análise de dados ambientais.
+                </p>
+            </div>
+
+            <div class="projects-carousel">
+                <button class="carousel-btn carousel-btn--prev" aria-label="Rolar para a esquerda">‹</button>
+
+                <div class="projects-grid">
+
+                    <!-- PROJETO 01 -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img
+                                src="projeto-1.png"
+                                alt="Prévia do projeto de monitoramento ambiental">
+
+                            <span class="project-number">PROJETO 01</span>
+                        </div>
+
+                        <div class="project-content">
+                            <span class="project-category">
+                                Sensoriamento remoto
+                            </span>
+
+                            <h3>Monitoramento de Vegetação</h3>
+
+                            <p class="project-description">
+                                Aplicação para explorar indicadores de vegetação,
+                                visualizar mapas temáticos e analisar variações
+                                temporais por meio de gráficos e métricas ambientais.
+                            </p>
+
+                            <div class="project-tags">
+                                <span>GIS</span>
+                                <span>Python</span>
+                                <span>Dados ambientais</span>
+                            </div>
+
+                            <div class="project-footer">
+                                <span class="project-status">
+                                    Em desenvolvimento
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJETO 02 -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img
+                                src="projeto-2.png"
+                                alt="Prévia do segundo projeto geoespacial">
+
+                            <span class="project-number">PROJETO 02</span>
+                        </div>
+
+                        <div class="project-content">
+                            <span class="project-category">
+                                Análise espacial
+                            </span>
+
+                            <h3>Análise Geoespacial Ambiental</h3>
+
+                            <p class="project-description">
+                                Espaço para apresentar outro estudo geoespacial,
+                                com mapas interativos, camadas temáticas e
+                                ferramentas de exploração de dados.
+                            </p>
+
+                            <div class="project-tags">
+                                <span>Geoprocessamento</span>
+                                <span>GIS</span>
+                                <span>Análise espacial</span>
+                            </div>
+
+                            <div class="project-footer">
+                                <span class="project-status">
+                                    Projeto futuro
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJETO 03 -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img
+                                src="projeto-2.png"
+                                alt="Prévia do terceiro projeto geoespacial">
+
+                            <span class="project-number">PROJETO 03</span>
+                        </div>
+
+                        <div class="project-content">
+                            <span class="project-category">
+                                Modelagem ambiental
+                            </span>
+
+                            <h3>Modelagem e Predição Ambiental</h3>
+
+                            <p class="project-description">
+                                Espaço para apresentar um terceiro estudo, com
+                                modelagem de dados ambientais, predições espaciais
+                                e integração de variáveis biofísicas em ambiente SIG.
+                            </p>
+
+                            <div class="project-tags">
+                                <span>Modelagem</span>
+                                <span>Python</span>
+                                <span>SIG</span>
+                            </div>
+
+                            <div class="project-footer">
+                                <span class="project-status">
+                                    Projeto futuro
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+                <button class="carousel-btn carousel-btn--next" aria-label="Rolar para a direita">›</button>
+            </div>
+
+            <p class="projects-note">
+                Novos projetos serão adicionados a esta galeria conforme
+                suas aplicações forem desenvolvidas e publicadas.
+            </p>
+
         </div>
+    </section>
 
-        <div class="card">
-            <h3>🌱 Materiais Aplicados</h3>
-            <p>Protocolos de campo, exemplos de inventário florestal, conforto térmico e indicadores ecológicos.</p>
+    <!-- ENSINO E RECURSOS -->
+    <section id="recursos" class="section resources-section">
+        <div class="container">
+
+            <div class="section-heading">
+                <span class="section-eyebrow">COMPARTILHAMENTO</span>
+
+                <h2>Ensino e recursos</h2>
+
+                <p>
+                    Materiais, referências e conteúdos aplicados
+                    à área ambiental e às geotecnologias.
+                </p>
+            </div>
+
+            <div class="cards-container">
+
+                <article class="card">
+                    <span class="resource-icon">01</span>
+                    <h3>Aulas e materiais</h3>
+                    <p>
+                        Slides, resumos e materiais de apoio
+                        utilizados em disciplinas e estudos.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <span class="resource-icon">02</span>
+                    <h3>Materiais aplicados</h3>
+                    <p>
+                        Exemplos de inventário florestal,
+                        protocolos de campo e indicadores ambientais.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <span class="resource-icon">03</span>
+                    <h3>Downloads</h3>
+                    <p>
+                        Espaço para disponibilizar arquivos,
+                        bases de dados, mapas e atividades práticas.
+                    </p>
+                </article>
+
+            </div>
         </div>
+    </section>
 
-        <div class="card">
-            <h3>📂 Downloads</h3>
-            <p>Arquivos complementares, bases de dados, mapas e atividades práticas.</p>
+    <!-- CONTATO -->
+    <section id="contato" class="section contact-section">
+        <div class="container contact-container">
+
+            <div class="section-heading">
+                <span class="section-eyebrow">VAMOS CONVERSAR</span>
+
+                <h2>Contato</h2>
+
+                <p>
+                    Para oportunidades profissionais, colaboração
+                    em projetos ou troca de conhecimentos.
+                </p>
+            </div>
+
+            <form
+                class="contato-form"
+                action="https://formsubmit.co/bbertini@estudante.ufscar.br"
+                method="POST">
+
+                <input
+                    type="text"
+                    name="nome"
+                    placeholder="Seu nome"
+                    aria-label="Seu nome"
+                    required>
+
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Seu e-mail"
+                    aria-label="Seu e-mail"
+                    required>
+
+                <textarea
+                    name="mensagem"
+                    rows="5"
+                    placeholder="Sua mensagem"
+                    aria-label="Sua mensagem"
+                    required></textarea>
+
+                <button type="submit">Enviar mensagem</button>
+            </form>
+
         </div>
+    </section>
 
-    </div>
-</section>
-
-<section id="contato" class="section">
-    <div class="container">
-        <h2>Contato</h2>
-
-        <form class="contato-form" action="https://formsubmit.co/bbertini@estudante.ufscar.br" method="POST">
-            <input type="text" name="nome" placeholder="Seu nome" required>
-            <input type="email" name="email" placeholder="Seu e-mail" required>
-            <textarea name="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
-
-            <button type="submit">Enviar</button>
-        </form>
-    </div>
-</section>
-
-
-<footer class="footer">
-    <div class="container">
-        <p>© 2025 • Desenvolvido por Bruna Bertini</p>
-    </div>
-</footer>
-
+    <!-- RODAPÉ -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p>© 2026 Bruna Bertini</p>
+            <a href="#inicio">Voltar ao início ↑</a>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</body>
 
+</body>
 </html>

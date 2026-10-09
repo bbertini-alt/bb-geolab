@@ -1,56 +1,42 @@
-// Rolagem suave para âncoras internas
-document.querySelectorAll('a[href^="#"]').forEach(link => {
-    link.addEventListener("click", function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute("href"));
-        if (target) {
-            target.scrollIntoView({ behavior: "smooth" });
-        }
-    });
-});
-
-// Efeito no banner (hero) ao rolar
-window.addEventListener("scroll", () => {
-    const hero = document.querySelector(".hero"); // corrigido
-    if (!hero) return;
-
-    if (window.scrollY > 50) {
-        hero.classList.add("scrolled");
-    } else {
-        hero.classList.remove("scrolled");
-    }
-});
-/* CARROSSEL DE PROJETOS */
-const track = document.querySelector('.carousel-track');
-const nextBtn = document.querySelector('.next');
-const prevBtn = document.querySelector('.prev');
-
-if (track && nextBtn && prevBtn) {
-    const slides = Array.from(track.children);
-    let index = 0;
-
-    nextBtn.addEventListener('click', () => {
-        index = (index + 1) % slides.length;
-        track.style.transform = `translateX(-${index * 100}%)`;
-    });
-
-    prevBtn.addEventListener('click', () => {
-        index = (index - 1 + slides.length) % slides.length;
-        track.style.transform = `translateX(-${index * 100}%)`;
-    });
-}
 document.addEventListener("DOMContentLoaded", () => {
 
-    let index = 0;
-    const slides = document.querySelectorAll(".carousel-inner img");
-    const inner = document.querySelector(".carousel-inner");
+    /* ---------- NAVBAR ---------- */
+    const navbar = document.querySelector(".navbar");
 
-    function showSlide(i) {
-        index = (i + slides.length) % slides.length;
-        inner.style.transform = `translateX(${-index * 100}%)`;
+    if (navbar) {
+        function updateNavbar() {
+            navbar.classList.toggle("scrolled", window.scrollY > 10);
+        }
+
+        updateNavbar();
+        window.addEventListener("scroll", updateNavbar, { passive: true });
     }
 
-    document.querySelector(".next").onclick = () => showSlide(index + 1);
-    document.querySelector(".prev").onclick = () => showSlide(index - 1);
+    /* ---------- CARROSSEL DE PROJETOS ---------- */
+    const track = document.querySelector(".projects-grid");
+    const prev = document.querySelector(".carousel-btn--prev");
+    const next = document.querySelector(".carousel-btn--next");
+
+    if (track && prev && next) {
+        const scrollAmount = () => track.clientWidth * 0.6;
+
+        next.addEventListener("click", () => {
+            track.scrollBy({ left: scrollAmount(), behavior: "smooth" });
+        });
+
+        prev.addEventListener("click", () => {
+            track.scrollBy({ left: -scrollAmount(), behavior: "smooth" });
+        });
+
+        const updateButtons = () => {
+            const maxScroll = track.scrollWidth - track.clientWidth;
+            prev.disabled = track.scrollLeft <= 5;
+            next.disabled = track.scrollLeft >= maxScroll - 5;
+        };
+
+        track.addEventListener("scroll", updateButtons);
+        window.addEventListener("resize", updateButtons);
+        updateButtons();
+    }
 
 });
