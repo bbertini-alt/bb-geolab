@@ -1,5 +1,5 @@
 /* ========================================
-   CONFIGURAÇÕES GERAIS
+    CONFIGURAÇÕES GERAIS
 ======================================== */
 
 :root {
@@ -213,15 +213,20 @@ a {
     background: var(--white);
 }
 
+/* Container mais largo apenas nesta seção */
+.about-section .container {
+    width: min(94%, 1320px);
+}
+
 .about-container {
     display: grid;
-    grid-template-columns: 1.1fr 1fr;
-    gap: 56px;
+    grid-template-columns: 1fr 1.4fr;  /* texto 42% | imagens 58% */
+    gap: 44px;
     align-items: center;
 }
 
 .about-content {
-    max-width: 560px;
+    max-width: 100%;
 }
 
 .about-content h1 {
@@ -294,11 +299,11 @@ a {
     background: #b9c9bd;
 }
 
-/* Imagens compactas lado a lado */
+/* Imagens ampliadas */
 .about-images {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 14px;
+    gap: 16px;
 }
 
 .about-image {
@@ -317,11 +322,11 @@ a {
 }
 
 .about-image--main {
-    aspect-ratio: 3 / 4;
+    aspect-ratio: 4 / 5;
 }
 
 .about-image--secondary {
-    aspect-ratio: 3 / 4;
+    aspect-ratio: 4 / 5;
     margin-top: 24px;
 }
 
