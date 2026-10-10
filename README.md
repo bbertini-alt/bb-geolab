@@ -4,7 +4,7 @@
 
 ### 🌐 Acesse a Landing Page
 
-👉 **[Visitar a Landing Page](https://bbertini-alt.github.io/bbconsultoria/)**
+👉 **[Visitar a Landing Page](https://bbertini-alt.github.io/bb-geolab/)**
 
 ---
 
@@ -100,6 +100,6 @@ Este repositório possui caráter **acadêmico e demonstrativo**, sendo parte da
 
 ### 🌐 Projeto publicado
 
-**[🔗 Acessar a Landing Page](https://bbertini-alt.github.io/bbconsultoria/)**
+**[🔗 Acessar a Landing Page](https://bbertini-alt.github.io/bb-geolab/)**
 
  Obrigada por visitar este projeto!
