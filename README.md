@@ -65,10 +65,10 @@ O projeto foi desenvolvido com os seguintes objetivos:
 
 Minha graduação em **Engenharia Florestal** aplica diversos estudos que envolvem tecnologia, dados e análise espacial.
 
-* inventário florestal;
-* mensuração florestal;
-* análise de dados florestais;
-* geoprocessamento 
+* sensoriamento remoto;
+* indicadores;
+* análise de dados;
+* geoprocessamento
 
 
 ###  Ciência de dados

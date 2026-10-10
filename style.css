@@ -231,10 +231,10 @@ a {
 
 .about-content h1 {
     color: var(--green-dark);
-    font-size: clamp(2rem, 4.5vw, 3rem);
-    line-height: 1.15;
-    letter-spacing: -1px;
-    margin: 10px 0 18px;
+    font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    margin: 10px 0 16px;
 }
 
 .about-description {
